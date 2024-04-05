@@ -16,3 +16,7 @@ Content-Type: application/json
   "name": "Alan Gonçalves",
   "email": "lnjnr92@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/events/086fe9f6-c17f-426b-9473-3f278c350008

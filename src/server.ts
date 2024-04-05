@@ -5,6 +5,7 @@ import {
 } from "fastify-type-provider-zod";
 import { createEvent } from "./routes/create-event";
 import { registerForEvent } from "./routes/register-for-event";
+import { getEvents } from "./routes/get-event";
 
 const app = fastify();
 
@@ -13,6 +14,7 @@ app.setValidatorCompiler(validatorCompiler);
 
 app.register(createEvent)
 app.register(registerForEvent)
+app.register(getEvents)
 
 app.listen({ port: 3333 }).then(() => {
   console.log("HTTP Server Running!");
